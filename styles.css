@@ -1,0 +1,108 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.closeBtn {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  right: 0px;
+  top: 0px;
+  background: url(./img/cross_btn.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.modalContainer {
+  position: relative;
+}
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 3;
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+  background-color: rgba(0, 0, 0, 0.7);
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.transition-effect {
+  transition: opacity 500ms ease-in-out, visibility 500ms ease-in-out;
+}
+
+.inMobile {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url("./img/heart1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 300px;
+  height: 300px;
+}
+
+.show-modal {
+  pointer-events: initial;
+  opacity: 1;
+  visibility: visible;
+}
+.textCover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 110%;
+  height: 80%;
+}
+.wishTextContainer {
+  display: block;
+  width: 200px;
+  color: white;
+  font-size: 18px;
+  font-style: italic;
+  margin: 60px auto;
+}
+
+.modalButton {
+  width: 200px;
+  height: 40px;
+  background-color: blueviolet;
+  color: cornsilk;
+  border: 1px solid blueviolet;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modalButton:hover {
+  background-color: cornsilk;
+  color: blueviolet;
+  border: 1px solid blueviolet;
+}
+.containers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
