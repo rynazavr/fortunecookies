@@ -10,6 +10,9 @@ html {
   padding: 0;
 }
 
+body {
+  background-image: url("./img/heartss.png");
+}
 img {
   display: block;
   max-width: 100%;
